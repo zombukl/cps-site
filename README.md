@@ -1,7 +1,7 @@
 # kataAcademyWebCore
 course of Kata Academy - WebCore
 
-GitHub Pages: https://13knvv.github.io/kataAcademyWebCore/
+GitHub Pages: 
 
 ## Макет
 
