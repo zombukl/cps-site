@@ -1,5 +1,3 @@
-# kataAcademyWebCore
-course of Kata Academy - WebCore
 
 GitHub Pages: 
 
