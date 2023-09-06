@@ -1,0 +1,129 @@
+.button {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+
+  &__title {
+    margin-right: 10px;
+  }
+
+  &:hover &__title {
+    color: $color-text-page-menu;
+  }
+
+  &:active &__title {
+    filter: brightness(0.5);
+  }
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color-background-button;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover &__logo {
+    filter: brightness(0.8);
+    box-shadow: 0px 0px 4px 3px rgba(34, 60, 80, 0.2);
+  }
+
+  &:active &__logo {
+    filter: brightness(0.5);
+    box-shadow: none;
+  }
+
+  &__title {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+      display: inline;
+    }
+  }
+
+  &--type--burger {
+    .button__logo {
+      background-image: url(../img/ico-burger.svg);
+    }
+  }
+
+  &--type--call {
+    .button__logo {
+      background-image: url(../img/ico-call.svg);
+    }
+  }
+
+  &--type--feedback {
+    .button__logo {
+      background-image: url(../img/ico-message.svg);
+    }
+  }
+
+  &--type--profile {
+    .button__logo {
+      background-image: url(../img/ico-profile.svg);
+    }
+  }
+
+  &--type--settings {
+    .button__logo {
+      background-image: url(../img/ico-settings.svg);
+    }
+  }
+
+  &--type--search-status {
+    .button__logo {
+      background-image: url(../img/ico-search-status.svg);
+    }
+  }
+
+  &--type--search {
+    .button__logo {
+      background-image: url(../img/ico-search.svg);
+    }
+  }
+
+  &--type--close {
+    .button__logo {
+      background-image: url(../img/ico-close.svg);
+    }
+  }
+
+  &--type--circule-link {
+    .button__logo {
+      background: none;
+      border: 2px solid $color-background-button;
+      border-radius: 50%;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid $color-background-button;
+        border-right: 2px solid $color-background-button;
+        transform: translate(12px, 12.5px) rotate(45deg);
+      }
+    }
+  }
+
+  &--type--text {
+    .button__logo {
+      background-image: url(../img/ico-button-type-text.svg);
+      background-repeat: no-repeat;
+      background-position: 85%;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 16px;
+      width: auto;
+      height: auto;
+      padding: 12px 18px;
+      padding-right: 36px;
+      color: #fff;
+    }
+  }
+}

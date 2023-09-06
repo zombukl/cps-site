@@ -1,0 +1,13 @@
+.swiper {
+  margin: 0;
+
+  &-wrapper {
+    width: auto;
+    margin-top: 16px;
+    @include adaptive-paddings-body-left-right;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.brand-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 240px;
+  height: 72px;
+  padding: 14px 16px;
+  border-radius: 6px;
+  background-color: $color-background-card;
+
+  &__img {
+    max-height: 100%;
+  }
+}

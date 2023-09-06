@@ -1,0 +1,27 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9;
+  opacity: 0;
+  display: none;
+  transform: all 600ms ease;
+
+  &--open {
+    display: block;
+    animation: modal-background-open 600ms ease;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes modal-background-open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.96;
+  }
+}

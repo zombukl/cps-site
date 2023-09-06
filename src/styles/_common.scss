@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'TT Lakes', 'serif';
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-text-body;
+}
+
+.body--lock {
+  overflow: hidden;
+}

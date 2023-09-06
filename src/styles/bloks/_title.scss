@@ -1,0 +1,12 @@
+.title {
+  border-left: 4px solid $color-border;
+  padding-left: $padding-body - 4px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: $padding-body-tablet - 4px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: $padding-body-desktop - 4px;
+  }
+}

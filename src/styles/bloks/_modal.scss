@@ -1,0 +1,94 @@
+.modal {
+  max-width: 440px;
+  height: 100vh;
+  background-color: $color-background-modal;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &--type--feedback,
+  &--type--call {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transform: translate(115%);
+    transition: transform 600ms ease;
+  }
+
+  &--open.modal--type--feedback,
+  &--open.modal--type--call {
+    transform: translate(0);
+  }
+
+  &--type--feedback,
+  &--type--call {
+    .modal__close {
+      margin-top: 24px;
+      margin-left: 16px;
+      margin-bottom: 10px;
+
+      @media screen and (min-width: $tablet) {
+        position: absolute;
+        left: -60px;
+        top: 23px;
+        margin: 0;
+      }
+    }
+  }
+
+  &--type--aside {
+    position: absolute;
+    transition: transform 600ms ease;
+    transform: translate(-100%);
+    z-index: 10;
+
+    @media screen and (min-width: $desktop) {
+      position: static;
+      transform: none;
+      z-index: 0;
+    }
+  }
+
+  &__inner {
+    overflow-y: scroll;
+    height: calc(100% - 74px);
+
+    @media screen and (min-width: $tablet) {
+      height: 100%;
+    }
+  }
+
+  &--open.modal--type--aside {
+    transform: translate(0);
+  }
+
+  &--type--aside {
+    overflow-y: scroll;
+    
+    .modal__close {
+      @media screen and (min-width: $desktop) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+}
+
+@keyframes modal-background-open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.96;
+  }
+}

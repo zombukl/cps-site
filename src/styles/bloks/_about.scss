@@ -1,0 +1,74 @@
+.about {
+  line-height: 18px;
+  padding-top: 10px;
+  @include adaptive-paddings-section-bottom;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: flex-start;
+    line-height: 20px;
+    padding-left: $padding-body-tablet;
+    padding-right: $padding-body-tablet;
+    padding-top: 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: $padding-body-desktop;
+    padding-right: $padding-body-desktop;
+    padding-top: 5px;
+  }
+
+  &__inner {
+    padding-left: $padding-body;
+    padding-right: $padding-body;
+    @media screen and (min-width: $tablet) {
+      width: 50%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+
+    p:first-child {
+      margin: 0;
+    }
+
+    &--visible--tablet,
+    &--visible--desktop,
+    &--visible--all {
+      display: none;
+    }
+
+    &--visible--tablet {
+      @media screen and (min-width: $tablet) {
+        display: inline;
+      }
+    }
+    &--visible--desktop {
+      @media screen and (min-width: $desktop) {
+        display: inline;
+      }
+    }
+  }
+
+  &__text--open &__text--visible--tablet,
+  &__text--open &__text--visible--desktop,
+  &__text--open &__text--visible--all {
+    display: inline;
+  }
+
+  &__img {
+    display: block;
+    margin-top: 16px;
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+      margin: 0;
+      width: 50%;
+      padding: 0;
+      margin-left: 30px;
+    }
+  }
+}

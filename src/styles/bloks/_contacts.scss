@@ -1,0 +1,22 @@
+.contacts {
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    color: $color-text-body;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    margin-bottom: 12px;
+
+    &:last-child {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      color: $color-text-hover;
+    }
+  }
+}

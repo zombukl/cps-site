@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  @include adaptive-paddings-body-left-right;
+  padding-bottom: 50px;
+
+  &__field {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border: 1px solid $color-border-field;
+    border-radius: 8px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &::placeholder {
+      color: $color-text-placeholder;
+    }
+
+    &:focus {
+      outline-color: $color-background-button;
+    }
+  }
+
+  &__field--type--textarea {
+    height: 118px;
+    resize: none;
+  }
+
+  &__agreement {
+    margin-top: 16px;
+  }
+
+  &__link {
+    color: $color-background-button;
+    text-decoration: none;
+  }
+
+  &__button {
+    margin-left: auto;
+    margin-top: 19px;
+  }
+}

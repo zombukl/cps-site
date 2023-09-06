@@ -1,0 +1,37 @@
+.prices-for-services {
+  @include adaptive-paddings-section-bottom;
+
+  &__text {
+    box-sizing: content-box;
+    max-width: 421px;
+    margin: 24px 0 0 0;
+    @include adaptive-paddings-body-left-right;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-text-body;
+    text-decoration: none;
+    margin-top: 16px;
+    @include adaptive-paddings-body-left-right;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid $color-background-button;
+      border-right: 2px solid $color-background-button;
+      transform: translateX(7px) rotate(45deg);
+    }
+
+    &:hover {
+      color: $color-text-hover;
+      &::after {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}

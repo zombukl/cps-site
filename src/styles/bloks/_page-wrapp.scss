@@ -1,0 +1,9 @@
+.page-wrapp {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $color-background-main;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}

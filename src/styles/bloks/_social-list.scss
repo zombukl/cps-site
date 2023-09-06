@@ -1,0 +1,12 @@
+.social-list {
+  @include list-reset;
+  display: flex;
+
+  &__item {
+    margin-left: 16px;
+  }
+
+  &__item:first-child {
+    margin-left: 0px;
+  }
+}

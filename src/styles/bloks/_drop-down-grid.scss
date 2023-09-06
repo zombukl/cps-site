@@ -1,0 +1,19 @@
+.drop-down-grid {
+  @include list-reset;
+
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 32px;
+    overflow: hidden;
+    transition: all 900ms ease;
+
+    &--open {
+      max-height: 1000px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

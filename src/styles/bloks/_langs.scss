@@ -1,0 +1,28 @@
+.langs {
+  @include list-reset;
+  display: flex;
+
+  &__item {
+    margin-right: 7px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__button {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: $color-text-body;
+    background: none;
+    border: none;
+    padding: 3px 0;
+    cursor: pointer;
+  }
+
+  &__item--active &__button,
+  &__item:hover &__button {
+    color: $color-text-hover;
+  }
+}

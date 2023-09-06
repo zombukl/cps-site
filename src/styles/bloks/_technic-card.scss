@@ -1,0 +1,19 @@
+.technic-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: border-box;
+  width: 240px;
+  height: 160px;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: $color-background-card;
+
+  &__title {
+    margin: 0;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

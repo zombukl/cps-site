@@ -1,0 +1,33 @@
+@mixin list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin adaptive-paddings-body-left-right {
+  padding-left: $padding-body;
+  padding-right: $padding-body;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: $padding-body-tablet;
+    padding-right: $padding-body-tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: $padding-body-desktop;
+    padding-right: $padding-body-desktop;
+  }
+}
+
+@mixin adaptive-paddings-section-bottom {
+  padding-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 50px;
+  }
+}

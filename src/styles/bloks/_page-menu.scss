@@ -1,0 +1,54 @@
+.page-menu {
+  @include adaptive-paddings-body-left-right;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &__list {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: $desktop) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    word-break: keep-all;
+    line-break: none;
+    white-space: nowrap;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-background-menu-item;
+    }
+  }
+
+  &__item--active {
+    background-color: $color-background-menu-item;
+    border: 2px solid $color-border;
+  }
+
+  &__link {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: $color-text-page-menu;
+    padding: 8px 13px;
+  }
+
+  &__item:hover &__link {
+    color: black;
+  }
+}

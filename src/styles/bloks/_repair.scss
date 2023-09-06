@@ -1,0 +1,51 @@
+.repair {
+  @include adaptive-paddings-section-bottom;
+
+  &__brands {
+    min-height: 120px;
+    margin-top: 16px;
+
+    @media screen and (min-width: $tablet) {
+      max-height: 160px;
+      margin-top: 24px;
+    }
+  }
+
+  &__technics {
+    min-height: 210px;
+    margin-top: 16px;
+
+    @media screen and (min-width: $tablet) {
+      min-height: 160px;
+      max-height: 160px;
+      margin-top: 16px;
+    }
+  }
+
+  &__btn-more {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+      margin-top: 24px;
+      margin-left: $padding-body-tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: $padding-body-desktop;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: $tablet) {
+      width: auto;
+      transition: all 400ms ease;
+    }
+  }
+
+  &__item:hover {
+    @media screen and (min-width: $tablet) {
+      transform: scale(1.05);
+    }
+  }
+}

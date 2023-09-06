@@ -1,0 +1,55 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100vh;
+  background-color: $color-background-modal;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(14, 24, 80, 0.2);
+  padding-top: 16px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: $desktop) {
+    box-shadow: none;
+    height: auto;
+    padding-top: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    padding: 0px $padding-menu-sides;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 15px;
+    }
+  }
+
+  &__logo {
+    margin-left: 16px;
+    margin-right: auto;
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 0px;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+    padding: 0px $padding-menu-sides;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 240px;
+    }
+  }
+
+  &__social-list {
+    margin-bottom: 16px;
+  }
+
+  &__contacts {
+    margin-bottom: 40px;
+  }
+}
