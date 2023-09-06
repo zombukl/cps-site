@@ -1,5 +1,5 @@
 
-GitHub Pages: 
+GitHub Pages: https://zombukl.github.io/cps-site/
 
 ## Макет
 
