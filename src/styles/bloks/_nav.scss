@@ -22,13 +22,15 @@
     padding: 4px 24px;
   }
 
-  &__item--active &__link {
+  &__item:focus &__link {
     border-left: 4px solid $color-border;
     padding-left: 20px;
     color: $color-text-hover;
   }
 
   &__item:hover &__link {
+    border-left: 4px solid $color-border;
+    padding-left: 20px;
     color: $color-text-hover;
   }
 }

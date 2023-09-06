@@ -24,6 +24,7 @@
   }
 
   &__item {
+    box-sizing: border-box;
     word-break: keep-all;
     line-break: none;
     white-space: nowrap;
@@ -32,12 +33,13 @@
 
     &:hover {
       background-color: $color-background-menu-item;
+      outline: 2px solid $color-border;
     }
   }
 
-  &__item--active {
+  &:focus {
     background-color: $color-background-menu-item;
-    border: 2px solid $color-border;
+    outline: 2px solid $color-border;
   }
 
   &__link {
